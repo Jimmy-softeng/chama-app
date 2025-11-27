@@ -1,0 +1,16 @@
+# Local environment variables
+.env
+
+# Local database folder
+instance/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# React / Node files
+node_modules/
+build/
+
+# Log files
+*.log
