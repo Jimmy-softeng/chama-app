@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/*app-base*/
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ff862d;
+  color: #01605a;
+}
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+h3{
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+p{
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #01605a;
+}
+button{
+  background-color: #01605A;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #60ad69;
+}
+/* Streamline */
+.streamline-section{
+  background-color: #fde7d2;
+}
+.streamline-section button {
+  background-color: #01605a;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.streamline-section button:hover {
+  background-color: #60ad69;
+}
+/* Features */
+.features-section {
+  background-color: #ff862d;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+.feature-card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+  max-height: 100px;
+  margin-bottom: 10px;
+}
+/* CTA */
+.cta-section {
+  background-color: #fde7d2;
+}
+.cta-section button {
+  background-color: #01605a;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.-section button:hover {
+  background-color: #60ad69;
+}
+/* FOOTER */
+.footer{
+  background-color: #fde7d2;
+}
+/* Landing Navbar */
+.landing-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ff862d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.landing-navbar-logo h2 {
+  margin: 0;
+  color: #01605a;
+}
+
+.landing-navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+}
+
+.landing-navbar-links li a {
+  text-decoration: none;
+  color: #01605a;
+  font-weight: 500;
+}
+
+.landing-navbar-links li button {
+  background-color: #01605a;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.landing-navbar-links li button:hover {
+  background-color: #60ad69;
+}
+
+

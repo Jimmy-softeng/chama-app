@@ -1,0 +1,47 @@
+/* navbar.css */
+.navbar {
+  height: 60px;                 /* fixed navbar height */
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color:#ff862d;
+  box-sizing: border-box;
+}
+
+/* left / right pieces */
+.navbar-left { display:flex; align-items:center; gap:12px; }
+.navbar-right { display:flex; align-items:center; gap:12px; }
+
+/* remove default margins for headings inside navbar */
+.navbar h2, .navbar h1, .navbar p {
+  margin: 0;
+  padding: 0;
+}
+
+/* logout button */
+.logout-btn {
+  background: transparent;
+  color: #ff862d;
+  border: 1px solid #fde7d2;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.logout-btn:hover { opacity: 0.9; 
+ background-color: #fde7d2;
+}
+
+/* small avatar */
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fde7d2;
+  color: #ff862d;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+}

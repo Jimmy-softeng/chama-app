@@ -1,0 +1,34 @@
+.manage-loans {
+  padding: 20px;
+}
+
+.manage-loans h2 {
+  margin-bottom: 15px;
+}
+
+.manage-loans table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.manage-loans th,
+.manage-loans td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.manage-loans th {
+  background: #f4f4f4;
+}
+
+.manage-loans button {
+  margin: 2px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.manage-loans button:hover {
+  opacity: 0.8;
+}

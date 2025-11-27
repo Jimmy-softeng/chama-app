@@ -1,0 +1,27 @@
+/* adminDashboard.css - layout for navbar + sidebar + content */
+.admin-dashboard {
+  display: flex;
+  flex-direction: column; /* navbar on top, rest below */
+  height: 100vh;     /* full viewport height */
+                         /*box-sizing: border-box;*/
+}
+
+/* container that holds sidebar and content side-by-side */
+.dashboard-body {
+  display: flex;
+  flex: 1;                /* take remaining height below navbar */
+  overflow: hidden;       /* keep scrolling inside content area */
+  height: 100%;         /* stretch to full height */
+}
+
+/* content area (right side) - IMPORTANT: fill remaining height and scroll internally */
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;       /* only the content scrolls vertically */
+  display: flex;
+  justify-content: center; /* center children horizontally (e.g. table wrapper) */
+  align-items: flex-start; /* align children at top of content area */
+  background: #fde7d2;    /* light background behind the card/table */
+}

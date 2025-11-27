@@ -1,0 +1,26 @@
+.member-dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Body under navbar */
+.dashboard-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  border-right: 2px solid #01605a;
+}
+
+/* Main page content */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  
+}

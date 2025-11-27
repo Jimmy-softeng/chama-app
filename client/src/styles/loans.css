@@ -1,0 +1,37 @@
+.loans-container {
+  padding: 20px;
+}
+
+.loan-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+  max-width: 400px;
+}
+
+.loan-form input, .loan-form button {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.loans-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.loans-table th, .loans-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.loans-table th {
+  background: #f4f4f4;
+  text-align: left;
+}
+
+.msg {
+  color: green;
+  margin-bottom: 10px;
+}

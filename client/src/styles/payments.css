@@ -1,0 +1,55 @@
+.payments-container {
+  padding: 20px;
+}
+
+.payment-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.payment-form input {
+  padding: 8px;
+  flex: 1 1 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.payment-form button {
+  padding: 10px 15px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.payment-form button:hover {
+  background: #005fa3;
+}
+
+.error-text {
+  color: red;
+  margin: 10px 0;
+}
+
+.success-text {
+  color: green;
+  margin: 10px 0;
+}
+
+.payments-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payments-list th,
+.payments-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.payments-list th {
+  background: #f4f4f4;
+}
