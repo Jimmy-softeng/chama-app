@@ -9,15 +9,12 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
     # Security
-    SQLALCHEMY_DATABASE_URI = os.getenv(
-    "DATABASE_URL",
-    f"sqlite:///{os.path.join(basedir, 'instance', 'chama.db')}"
-)
+    SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL")
     JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "jwt-secret")
     JWT_ACCESS_TOKEN_EXPIRES = 3600  # 1 hour
 
-    # Database: prefer DATABASE_URL from .env, fallback to local SQLite in /instance/chama.db
-    
+ 
+
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # Mail settings
