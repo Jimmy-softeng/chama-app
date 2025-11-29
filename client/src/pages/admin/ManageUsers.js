@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../styles/manageusers.css";
 import { FaTrash, FaUserShield } from "react-icons/fa";
+import { API_BASE } from "../../config";
 
 function ManageUsers() {
   const [users, setUsers] = useState([]);
@@ -20,7 +21,7 @@ function ManageUsers() {
     try {
       if (!token) throw new Error("No auth token found. Please login as admin.");
 
-      const res = await axios.get("http://127.0.0.1:5000/users", {
+      const res = await axios.get(`${API_BASE}/users`, {
         headers: { Authorization: `Bearer ${token}` },
         params: filter !== "all" ? { role: filter } : {},
       });
@@ -46,7 +47,7 @@ function ManageUsers() {
     setErr(""); setInfo("");
     try {
       await axios.put(
-        `http://127.0.0.1:5000/users/${userId}/role`,
+        `${API_BASE}/users/${userId}/role`,
         { role },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -63,7 +64,7 @@ function ManageUsers() {
     if (!window.confirm("Are you sure you want to delete this user?")) return;
     setErr(""); setInfo("");
     try {
-      await axios.delete(`http://127.0.0.1:5000/users/${userId}/delete`, {
+      await axios.delete(`${API_BASE}/users/${userId}/delete`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setInfo("User deleted");

@@ -3,8 +3,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../../styles/payments.css";
+import { API_BASE } from "../../config";
 
-const API_BASE = "http://127.0.0.1:5000";
 
 function getAuthHeader() {
   const token = localStorage.getItem("token");

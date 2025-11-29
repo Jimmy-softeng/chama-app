@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import "../../styles/resetpassword.css";
 import resetImage from "../../assets/images/reset.png";
+import { API_BASE } from "../../config";
 
-const API_BASE = "http://127.0.0.1:5000";
 
 export default function ResetPassword() {
   // Try params first (works for /reset-password/:token)

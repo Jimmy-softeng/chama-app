@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../../styles/auth.css";
-
+import { API_BASE } from "../../config";
 function VerifyEmail() {
   const { token } = useParams(); // URL: /verify-email/:token
   const [status, setStatus] = useState("Verifying...");
@@ -18,7 +18,7 @@ function VerifyEmail() {
       try {
         // Decode token safely (backend expects URL-encoded token)
         const res = await fetch(
-          `http://127.0.0.1:5000/auth/verify-email/${encodeURIComponent(token)}`
+          `${API_BASE}/auth/verify-email/${encodeURIComponent(token)}`
         );
 
         const data = await res.json();

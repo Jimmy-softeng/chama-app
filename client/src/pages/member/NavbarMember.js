@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../../styles/Navbar.css";
+import { API_BASE } from "../../config";
 
 const NavbarMember = () => {
   const [user, setUser] = useState(null);
@@ -18,7 +19,7 @@ const NavbarMember = () => {
     if (!token) return handleLogout();
 
     axios
-      .get("http://localhost:5000/me", {
+      .get(`${API_BASE}/me`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setUser(res.data.user))

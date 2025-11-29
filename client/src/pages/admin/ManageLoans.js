@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../styles/manageLoans.css";
+import { API_BASE } from "../../config";
 
-const API_BASE = "http://localhost:5000";
 
 function getAuthHeader() {
   const token = localStorage.getItem("token");

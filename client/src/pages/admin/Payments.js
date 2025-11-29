@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../styles/payment.css";
-
-const API_BASE = "http://127.0.0.1:5000";
+import { API_BASE } from "../../config";
 
 function getAuthHeader() {
   const token = localStorage.getItem("token");
